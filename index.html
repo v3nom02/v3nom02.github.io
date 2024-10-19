@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>South Korea Showcase - Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        .card {
+            transition: transform 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .flag-image {
+            width: 40px;
+            height: auto;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
+        .parallax {
+            background-image: url('Eunpyeong-hanok-Seoul.jpg');
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .section {
+            padding: 60px 0;
+            background-color: rgb(215, 215, 215);
+        }
+
+        .welcome-text {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+       
+        .full-page {
+            min-height: 100vh;
+            padding: 60px;
+            background-color: #e3e3e3;
+        }
+
+        
+        .card a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        .card a:hover {
+            text-decoration: none; 
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="south-korea-flag-asian-korean-wallpaper-preview.jpg" class="flag-image" alt="South Korea Flag">
+                South Korea
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destinations">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#booking">Booking</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="parallax">
+        <div>
+            <h1 class="welcome-text">WELCOME TO SOUTH KOREA!</h1>
+            <p>Discover the beauty, culture, and landmarks of South Korea.</p>
+        </div>
+    </div>
+
+    <div class="section" id="destinations">
+        <div class="container">
+            <h2 class="text-center">Top Destinations in South Korea</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="everland.html">
+                            <img src="everland_featured.avif" class="card-img-top" alt="Everland Amusement Park">
+                            <div class="card-body">
+                                <h5 class="card-title">Everland Amusement Park</h5>
+                                <p class="card-text">One of the largest amusement parks in South Korea with thrilling rides and attractions.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="namsantower.html">
+                            <img src="Namsan-Tower-during-autumn-in-Seoul-South-Korea-1244x700.jpg" class="card-img-top" alt="Namsan Tower">
+                            <div class="card-body">
+                                <h5 class="card-title">Namsan Tower</h5>
+                                <p class="card-text">A famous landmark in Seoul with panoramic views of the city.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="jejuisland.html"> 
+                            <img src="jeju.jpg" class="card-img-top" alt="Jeju Island">
+                            <div class="card-body">
+                                <h5 class="card-title">Jeju Island</h5>
+                                <p class="card-text">A beautiful island known for its stunning beaches and natural wonders.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="seoul.html">
+                            <img src="seoul.jpg" class="card-img-top" alt="Seoul">
+                            <div class="card-body">
+                                <h5 class="card-title">Seoul</h5>
+                                <p class="card-text">The capital city, rich in history and modern attractions and where ancient traditions meet vibrant modernity.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="busan.html">
+                            <img src="busan.jpg" class="card-img-top" alt="Busan">
+                            <div class="card-body">
+                                <h5 class="card-title">Busan</h5>
+                                <p class="card-text">A vibrant city known for its beautiful beaches and seafood.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <a href="gyeongbokgung.html">
+                            <img src="Gyeongbokgung-palace-Seoul-Front-view-of-palace.jpg" class="card-img-top" alt="Gyeongbokgung Palace">
+                            <div class="card-body">
+                                <h5 class="card-title">Gyeongbokgung Palace</h5>
+                                <p class="card-text">A historic palace that showcases the grandeur of Korean architecture.</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <p>Explore South Korea and enjoy its breathtaking beauty. &copy; 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

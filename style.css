@@ -1,0 +1,34 @@
+.parallax {
+    background-image: url('Eunpyeong-hanok-Seoul.jpg'); /* Replace with your image file */
+    height: 100vh; /* Full screen height */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center; /* Center text */
+    color: white; /* White text for better contrast */
+}
+
+/* Optional: If you want to add a light overlay instead */
+.overlay {
+    position: absolute; /* Positioning overlay absolutely */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Change 0.3 to a lower value for a lighter overlay */
+    z-index: 1; /* Make sure the overlay is on top of the background */
+}
+
+.welcome-text {
+    position: relative; /* Position relative to allow overlay to sit underneath */
+    z-index: 2; /* Make sure text is above overlay */
+    font-size: 3rem; /* Large text for welcome message */
+    font-weight: bold; /* Bold text */
+}
+
+
+
