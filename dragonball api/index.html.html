@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Ball Universe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+        }
+
+        nav img {
+            height: 50px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        #video-section {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #video-section video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #video-section h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+            text-align: center;
+        }
+
+        #about {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        #about h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #characters {
+            padding: 50px 20px;
+        }
+
+        #characters h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #character-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .character {
+            width: 250px;
+            margin: 15px;
+            border: 1px solid #444;
+            background: rgba(0, 0, 0, 0.8);
+            text-align: center;
+            border-radius: 10px;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .character:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .character img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .character .name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .character .details {
+            font-size: 14px;
+            color: #ccc;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="logo.png" alt="Dragon Ball Logo">
+        <div>
+            <a href="#video-section">Home</a>
+            <a href="#about">About</a>
+            <a href="#characters">Characters</a>
+        </div>
+    </nav>
+
+    <!-- Video Section -->
+    <section id="video-section">
+        <video autoplay loop muted>
+            <source src="vegetavid.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+        <h1>Welcome to the Dragon Ball Universe</h1>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Dragon Ball</h2>
+        <p>
+            Dragon Ball is an epic tale of adventure, camaraderie, and the endless pursuit of strength. 
+            Follow Goku and his friends as they explore the universe, fight incredible battles, and protect the Earth from unimaginable threats.
+        </p>
+    </section>
+
+    <!-- Characters Section -->
+    <section id="characters">
+        <h2>Meet the Characters</h2>
+        <div id="character-list">
+            <div class="character">
+                <img src="goku.webp" alt="Goku">
+                <div class="name">Goku</div>
+                <div class="details">The Saiyan raised on Earth, striving to be the strongest fighter in the universe.</div>
+            </div>
+            <div class="character">
+                <img src="vegeta.webp" alt="Vegeta">
+                <div class="name">Vegeta</div>
+                <div class="details">The proud Prince of Saiyans, determined to surpass Goku at any cost.</div>
+            </div>
+            <div class="character">
+                <img src="bulma.webp" alt="Bulma">
+                <div class="name">Bulma</div>
+                <div class="details">A genius scientist and Goku's first ally on his journey.</div>
+            </div>
+            <div class="character">
+                <img src="picolo.webp" alt="Piccolo">
+                <div class="name">Piccolo</div>
+                <div class="details">A Namekian warrior who evolves from a villain to a loyal friend.</div>
+            </div>
+            <div class="character">
+                <img src="trunks.webp" alt="Trunks">
+                <div class="name">Trunks</div>
+                <div class="details">The son of Vegeta and Bulma, a skilled swordsman and fighter.</div>
+            </div>
+            <div class="character">
+                <img src="Freezer.webp" alt="Frieza">
+                <div class="name">Frieza</div>
+                <div class="details">One of the most powerful and feared villains in the universe.</div>
+            </div>
+            <div class="character">
+                <img src="cell.webp" alt="Cell">
+                <div class="name">Cell</div>
+                <div class="details">A bio-engineered android who seeks to achieve perfection and destroy the world.</div>
+            </div>
+            <div class="character">
+                <img src="buu.webp" alt="Majin Buu">
+                <div class="name">Majin Buu</div>
+                <div class="details">A powerful creature who can absorb others and change forms.</div>
+            </div>
+            <div class="character">
+                <img src="beerus.webp" alt="Beerus">
+                <div class="name">Beerus</div>
+                <div class="details">The God of Destruction, feared by all who cross his path.</div>
+            </div>
+            <div class="character">
+                <img src="whis.webp" alt="Whis">
+                <div class="name">Whis</div>
+                <div class="details">Beerus' attendant and a powerful angel with immense fighting abilities.</div>
+            </div>
+            <div class="character">
+                <img src="gohan.webp" alt="Gohan">
+                <div class="name">Gohan</div>
+                <div class="details">The eldest son of Goku, known for his immense power and intellect.</div>
+            </div>
+            <div class="character">
+                <img src="krillin.webp" alt="Krillin">
+                <div class="name">Krillin</div>
+                <div class="details">Goku's best friend and a brave warrior, despite being a human.</div>
+            </div>
+            <div class="character">
+                <img src="android18.webp" alt="Android 18">
+                <div class="name">Android 18</div>
+                <div class="details">A powerful android who becomes an ally of Goku and his friends.</div>
+            </div>
+            <div class="character">
+                <img src="yamcha.webp" alt="Yamcha">
+                <div class="name">Yamcha</div>
+                <div class="details">A former desert bandit and a member of the Z Fighters.</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
