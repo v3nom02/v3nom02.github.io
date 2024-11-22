@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dela Cueva's Portfolio</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    nav {
+      background-color: #222;
+    }
+
+    nav a {
+      color: #f1f1f1;
+      font-size: 1.2rem;
+      padding: 15px 20px;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #007bff;
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      opacity: 0.6; 
+    }
+
+    
+    .hero h1 {
+      font-size: 4rem;
+      color: #b0c4de; 
+      text-shadow: 0 0 8px #b0c4de, 0 0 16px #b0c4de, 0 0 24px #b0c4de;
+    }
+
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero div {
+      position: relative;
+      z-index: 2;
+    }
+
+   
+    .combined {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .profile-pic {
+      width: 250px; 
+      height: 300px; 
+      border-radius: 15px;
+      object-fit: cover; 
+      margin-bottom: 20px;
+    }
+
+   
+    .portfolio {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .portfolio-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .portfolio-item {
+      margin: 20px;
+      padding: 15px;
+      background-color: #333;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      width: 300px; 
+    }
+
+    .portfolio-item:hover {
+      transform: translateY(-10px);
+    }
+
+    .portfolio-item img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #222;
+      color: #f1f1f1;
+      position: relative;
+      width: 100%;
+    }
+
+    
+    .btn-get-started {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .btn-get-started:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Dela Cueva</a>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#combined">About & My Work</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+    </ul>
+  </nav>
+
+  
+  <section class="hero" id="home">
+    <video autoplay muted loop>
+      <source src="tech.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    <div>
+      <h1>Earl_chive</h1>
+      <p>"Hi, I'm Earl_chive, a BSIT student working hard to become a skilled web developer."</p>
+      <a href="#combined" class="btn-get-started">Get Started</a>
+    </div>
+  </section>
+
+  
+  <section class="combined" id="combined">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="IMG_2918.jpeg" alt="Your Profile Picture" class="profile-pic">
+      <p>Aspiring developer with a passion for creating innovative and engaging web experiences, aiming to bring fresh ideas and dedication to every project.</p>
+      <div class="skills">
+        <div><strong>HTML</strong></div>
+        <div><strong>CSS</strong></div>
+        <div><strong>JavaScript</strong></div>
+        <div><strong>Bootstrap</strong></div>
+      </div>
+    </div>
+
+    
+    <h2>My Work</h2>
+    <div class="portfolio-row">
+      <div class="portfolio-item">
+        <a href="https://v3nom02.github.io/" target="_blank">
+          <img src="south-korea-flag-asian-korean-wallpaper-preview.jpg" alt="Project 1">
+          <h3>South Korea Website</h3>
+          <p>Explore the beautiful places in South Korea.</p>
+        </a>
+      </div>
+      <div class="portfolio-item">
+        <a href="https://your-project-link.com" target="_blank">
+          <img src="project2.jpg" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>Brief description of Project 2.</p>
+        </a>
+      </div>
+     
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>&copy; 2024 Earl_chive. All rights reserved.</p>
+    <div>
+      <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a> |
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+ 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

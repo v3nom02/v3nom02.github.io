@@ -1,0 +1,109 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  margin: 0; /* Removes default body margin */
+  padding: 0; /* Removes default body padding */
+}
+
+/* Header/Nav */
+nav {
+  background-color: #222;
+}
+
+nav a {
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background-image: url('ice3d.jpg'); /* Your background image */
+  background-attachment: fixed; /* Keeps the background fixed while scrolling */
+  background-size: cover; /* Ensures the image covers the whole section */
+  background-position: center; /* Centers the background image */
+  animation: gradient 10s ease infinite; /* Adds gradient animation */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero h1 {
+  font-size: 4rem; /* Increases font size */
+  color: #007bff; /* Sets text color */
+  text-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff; /* Adds glowing effect */
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* About Me Section */
+.about {
+  text-align: center; /* Centers the text and content */
+  margin: 50px 0; /* Adds margin for spacing */
+}
+
+.about-content {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Aligns items vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  margin: 0 auto; /* Centers the flex container */
+}
+
+.profile-pic {
+  width: 150px; /* Set a specific width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Makes the image circular (optional) */
+  margin-bottom: 20px; /* Adds space below the image */
+}
+
+.skills {
+  display: flex; /* Enables flexbox layout for skills */
+  justify-content: center; /* Centers the skills horizontally */
+  flex-wrap: wrap; /* Allows skills to wrap to the next line if needed */
+  margin-top: 10px; /* Adds space above the skills */
+}
+
+.skills div {
+  background-color: #007bff; /* Background color for skills */
+  color: white; /* Text color for skills */
+  padding: 10px 15px; /* Adds padding around skills */
+  margin: 5px; /* Adds margin between skills */
+  border-radius: 5px; /* Rounds the corners of the skill blocks */
+}
+
+/* Portfolio Section */
+.portfolio {
+  text-align: center;
+  margin: 50px 0; /* Adds margin for spacing */
+}
+
+.portfolio-item {
+  margin-bottom: 30px; /* Adds margin below each portfolio item */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+/* Gradient Animation */
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
